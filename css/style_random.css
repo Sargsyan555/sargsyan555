@@ -1,0 +1,17 @@
+section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+h2{
+    font-size: 50px;
+    color: red;
+}
+a{
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+    background-color: #555555;
+    color: #EFEFEF;
+}

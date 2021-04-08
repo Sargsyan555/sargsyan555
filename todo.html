@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style_todo.css">
+
+</head>
+
+<body>
+<div class="row d-flex justify-content-center">
+    <div class=" pt-5 m-auto ">
+        <a href="index.html" class="btn btn-info">Home</a>
+        <a href="random.html" class="btn btn-info">Random Number</a>
+        <a href="circle.html" class="btn btn-info">Circle</a>
+    </div>
+</div>
+<section >
+    <div class="content">
+
+        <div class="add_area">
+            <input type="text" id="newTodo" class="new-todo">
+            <button class="add_item" id="add_item">Add</button>
+        </div>
+        <div class="to_do_style">
+            <h3>To Do</h3>
+            <hr>
+        </div>
+        <div class="todo_list">
+            <ul  id="todo_list">
+                <li >
+                    <input class="checkbox" type="checkbox"  onchange='handleChange(this);'>
+                    <label >For example</label>
+                    <input class='created_input'  type='text'  value='For example' >
+                    <button  class='change' onClick="change(this)">Edit</button>
+                    <button  class='edit' onClick="edit(this)">Edit</button>
+                    <button class='delete' onClick="remove(this)">Delete</button>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <button class="filter" onClick="completed()">COMPLETED</button>
+            <button class="filter" onClick="active()">Active</button>
+            <button class="filter" onClick="showAll()">All</button>
+        </div>
+    </div>
+</section>
+<script src="js/script_todo.js"></script>
+</body>
+</html>
